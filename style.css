@@ -2,8 +2,59 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    font-family: "Merriweather", serif;
+    background-color: #f9fafc;
+}
+
+.navbar_brand{
+    width: 100px;
+}
+
 .navbar{
-    background-color:antiquewhite;
     height: 50px;
     width:100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_button{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.nav_button:hover{
+    border: 2px solid #FF204E;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .navbar_brand{
+        width: 150px;
+    }
+    .nav_button{
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
